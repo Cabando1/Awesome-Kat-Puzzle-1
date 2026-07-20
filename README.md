@@ -4,47 +4,75 @@ A browser-based falling-block puzzle made for Gail, with original cartoon cats t
 
 ## Play
 
-The GitHub Pages site is expected at:
+Main version dashboard:
 
 `https://cabando1.github.io/Awesome-Kat-Puzzle-1/`
 
-If the deployment has not been enabled yet, open **Settings → Pages** and select **GitHub Actions** as the source. Then open the **Actions** tab and run **Deploy Awesome Kat Puzzle**.
+Private Joe Admin:
 
-## Current playable preview
+`https://cabando1.github.io/Awesome-Kat-Puzzle-1/joe-admin.html`
 
-- Four sample levels with different speeds and starter layouts
-- Seven classic falling-block shapes
-- Original rounded cartoon-cat visuals
-- Walking delivery cat and hatch-drop animation
-- Keyboard, touch buttons, tapping, and swiping
-- Synthesized meows and effects with mute control
-- Score, line goals, streaks, best scores, and saved progress
-- Admin Bird workshop for browser-local custom test levels
-- Responsive desktop, tablet, and phone design
+## Version 1: Classic
+
+Classic preserves the original desktop game that Gail and Joe approved.
+
+- Original layout and gameplay
+- Four rooms with 6, 10, 14 and 18-line goals
+- Cat runway and hatch animation
+- Named next-cat preview
+- Keyboard and touch controls
+- Saved scores and unlock progress
+- Protected wrapper hides the old player-facing Admin Bird control
+
+The frozen backup is stored on the `classic-v1-frozen` branch. Advanced development should not modify `game.html`.
+
+## Version 2: Advanced
+
+Advanced is a separate responsive build for computer, iPad, iPhone and Android.
+
+- No-scroll active gameplay layout
+- Runway, board, next cat and controls stay visible
+- Touch controls ordered `Rotate`, `Down`, `Left`, `Right`
+- Large separate Drop Cat button
+- Translucent outlined landing guide
+- Separate Advanced scores, unlocks and preferences
+- Four original rooms plus browser-local custom rooms
+- Custom cat roster with multiple names, colors and shape assignments
+- Advanced desktop layout remains optional beside Classic
+
+## Joe Admin
+
+The private PIN-protected browser-local dashboard manages Advanced Version 2 only.
+
+- Add, edit, duplicate, disable and delete cats
+- Assign multiple names to each cat profile
+- Select primary, shading and accent colors
+- Assign allowed I, O, T, L, J, S and Z shapes
+- Add and remove custom rooms
+- Set line goals, speeds, starter layouts and allowed shapes
+- Copy old prototype rooms into Advanced
+- Reset Advanced progress without changing Classic
+- Export and import Advanced configuration JSON
+
+GitHub Pages is static hosting. The PIN prevents casual access on that browser, but true account security, shared publishing and cross-device synchronization require a future backend/database.
 
 ## Controls
+
+Classic keyboard controls:
 
 - Left and right arrows: move
 - Down arrow: soft drop
 - Up arrow or Space: rotate
 - Enter: hard drop
 - P: pause
-- On mobile: use the buttons, tap to rotate, or swipe
 
-## Preview limitation
+Advanced touch controls:
 
-GitHub Pages is static hosting. Custom Admin Bird levels are currently stored only in the browser that created them. The production Hostinger version will add secure Gail and Joe administrator accounts, a shared database, level publishing, editing, ordering, and removal.
-
-## Planned production work
-
-1. Replace prototype block faces with a full original animated cat art set.
-2. Add secure Hostinger PHP/MySQL authentication for Gail and Joe.
-3. Add a visual shared level builder with testing and publishing.
-4. Add more level structures, themes, cat breeds, animations, sounds, and accessibility options.
-5. Add save synchronization and optional player profiles.
+- Left thumb: Rotate and Down
+- Right thumb: Left and Right
+- Separate Drop Cat button
+- Swipe or tap directly on the board is also supported
 
 ## Deployment
 
 The repository contains a GitHub Actions workflow at `.github/workflows/pages.yml`. It deploys the static site after a push to `main` once GitHub Pages is configured to use **GitHub Actions**.
-
-Original game presentation restored on July 20, 2026, and a fresh Pages deployment was triggered.
