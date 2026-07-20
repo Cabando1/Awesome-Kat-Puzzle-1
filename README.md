@@ -46,3 +46,5 @@ GitHub Pages is static hosting. Custom Admin Bird levels are currently stored on
 ## Deployment
 
 The repository contains a GitHub Actions workflow at `.github/workflows/pages.yml`. It deploys the static site after a push to `main` once GitHub Pages is configured to use **GitHub Actions**.
+
+Original game presentation restored on July 20, 2026, and a fresh Pages deployment was triggered.
