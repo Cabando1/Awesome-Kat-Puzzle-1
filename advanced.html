@@ -9,6 +9,8 @@
 <style>
 /* The hatch is on the right, so Advanced runway cats should face right. */
 .walker-body{transform:scaleX(-1);transform-origin:center}
+.play-nav{display:flex;gap:6px;min-width:0}.play-nav .top-btn{white-space:nowrap}.nav-short{display:none}
+@media(max-width:460px){.nav-long{display:none}.nav-short{display:inline}.play-nav{gap:4px}.play-nav .top-btn{width:38px;padding:0}.top-actions{gap:4px}.top-actions .top-btn{padding:6px 8px}.room-chip strong{font-size:.78rem}.room-chip span{font-size:.58rem}}
 </style>
 </head>
 <body data-theme="lavender" data-screen="lobby">
@@ -27,7 +29,10 @@
 
   <section id="playScreen" class="play-screen hidden" aria-label="Advanced Kat Puzzle game">
     <header class="play-topbar">
-      <button id="menuBtn" class="top-btn" type="button">← Menu</button>
+      <div class="play-nav">
+        <a class="top-btn" href="index.html" aria-label="Return to version dashboard" title="Versions"><span class="nav-long">← Versions</span><span class="nav-short">⇦</span></a>
+        <button id="menuBtn" class="top-btn" type="button" aria-label="Return to Advanced room menu" title="Rooms"><span class="nav-long">Rooms</span><span class="nav-short">☰</span></button>
+      </div>
       <div class="room-chip"><strong id="roomName">Cozy Box</strong><span id="roomProgress">0 / 6 lines</span></div>
       <div class="top-actions"><button id="pauseBtn" class="top-btn" type="button">Pause</button><button id="soundBtn" class="top-btn" type="button">🔊</button></div>
     </header>
