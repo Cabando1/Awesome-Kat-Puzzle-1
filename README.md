@@ -8,10 +8,6 @@ Main version dashboard:
 
 `https://cabando1.github.io/Awesome-Kat-Puzzle-1/`
 
-Private Joe Admin:
-
-`https://cabando1.github.io/Awesome-Kat-Puzzle-1/joe-admin.html`
-
 ## Version 1: Classic
 
 Classic preserves the original desktop game that Gail and Joe approved.
@@ -39,22 +35,6 @@ Advanced is a separate responsive build for computer, iPad, iPhone and Android.
 - Four original rooms plus browser-local custom rooms
 - Custom cat roster with multiple names, colors and shape assignments
 - Advanced desktop layout remains optional beside Classic
-
-## Joe Admin
-
-The private PIN-protected browser-local dashboard manages Advanced Version 2 only.
-
-- Add, edit, duplicate, disable and delete cats
-- Assign multiple names to each cat profile
-- Select primary, shading and accent colors
-- Assign allowed I, O, T, L, J, S and Z shapes
-- Add and remove custom rooms
-- Set line goals, speeds, starter layouts and allowed shapes
-- Copy old prototype rooms into Advanced
-- Reset Advanced progress without changing Classic
-- Export and import Advanced configuration JSON
-
-GitHub Pages is static hosting. The PIN prevents casual access on that browser, but true account security, shared publishing and cross-device synchronization require a future backend/database.
 
 ## Controls
 
